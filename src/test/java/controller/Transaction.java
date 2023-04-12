@@ -254,7 +254,7 @@ public class Transaction extends Setup {
     }
     public void checkStatementValid() {
         RestAssured.baseURI = prop.getProperty("base_url");
-        String phoneNumber = prop.getProperty("customer2_phone_number");
+        String phoneNumber = prop.getProperty("customer_phone_number");
         Response response =
                 given()
                         .contentType("application/json")
